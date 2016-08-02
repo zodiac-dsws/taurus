@@ -34,12 +34,6 @@ public class Orchestrator implements ServletContextListener {
 
 	@Override
     public void contextInitialized(ServletContextEvent event) {
-    	loggerDebug("--------------------------------------");
-    	loggerDebug("Sagitarii Workflow Data Science System");
-    	loggerDebug("CEFET-RJ                          2015");
-    	loggerDebug("Carlos M. Abreu magno.mabreu@gmail.com");
-    	loggerDebug("--------------------------------------");
-    	
     	ServletContext context = event.getServletContext();
     	System.setProperty("rootPath", context.getRealPath("/") );
 
